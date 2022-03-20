@@ -23,21 +23,13 @@ public class Scope {
         Scanner s=new Scanner(System.in);
        int n=s.nextInt();
        Student[] s2=new Student[n];
-   for(int i=0;i<n;i++){
-   s2[i]=new Student();
-   s2[i]=s2[i].update();
-   
-   
-   
-   
-   
-   
+       for(int i=0;i<n;i++){
+           s2[i]=new Student();
+           s2[i]=s2[i].update();
    }       
        Student so=new Student();
-       so.sort(s2);
-     
-    }
-   
+       so.sort(s2);     
+    }   
 }
 
 class Student{
@@ -56,7 +48,6 @@ Student update()
 
 void sort(Student[] s1){
 
-
 int n=s1.length;
  for(int i=0;i<n;i++){
            for(int j=i+1;j<n;j++){
@@ -74,24 +65,7 @@ int n=s1.length;
      
          System.out.print(s1[i]+"\t");
      }
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
 }
  
  
